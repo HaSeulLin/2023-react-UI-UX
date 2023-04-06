@@ -59,14 +59,16 @@ hr { margin: 20px 0 10px 0;}
 .inputTodo input, .inputTodo button, .showTodo button {
     border: 2px solid mediumblue;
     padding: 5px 11px;
-    border-radius: 40px;
+    border-radius: 20px;
     color: mediumblue;
+    box-shadow: 1px 1px 2px rgba(0, 0, 10, 0.3);  
 }
 .inputTodo input[type="text"] {
     width: 50%;
     background-color: transparent;
     padding: 8px 17px;
     transition: 0.2s;
+    font-weight: bold;
 }
 .inputTodo input[type="text"]:focus {
     outline: none;
@@ -74,11 +76,27 @@ hr { margin: 20px 0 10px 0;}
     color: beige;
     transition: 0.2s;
 }
+.inputTodo button {
+    font-weight: bold;
+    font-size: 1.3rem;
+    padding: 6px 11px 2px 11px;
+}
 .inputTodo button, .showTodo button {
     margin-left: 7px;
     background-color: mediumblue;
     color: beige;
+    transition: 0.2s;
 }
+.showTodo button {
+    padding-top: 9px;
+    font-size: 1rem;
+}
+.inputTodo button:hover, .showTodo button:hover {
+    background-color: transparent;
+    color : mediumblue;
+    transition: 0.2s;
+}
+
 .showTodo button:nth-child(2) {
     margin-left: 15px;
 }
@@ -110,7 +128,7 @@ hr { margin: 20px 0 10px 0;}
     border: none;
     background-color: mediumblue;
     color: beige;
-    padding: 7px 8px 4px 8px;
+    padding: 6px 7px 4px 7px;
     font-weight: bold;
     font-size: 0.3rem;
 }
